@@ -3,14 +3,10 @@
 #include <unistd.h>
 #include "Server.h"
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-
-    char ch[] = "你";
-    printf("%s size=%d\n", ch, sizeof(ch));
-    return 0;
-
-    if(argc<3){
+    if (argc < 3)
+    {
         printf("./a.out port path\n");
         return -1;
     }
@@ -19,6 +15,11 @@ int main(int argc, char* argv[])
     chdir(argv[2]);
     // 初始化用于监听的套接字
     int lfd = initListenFd(port);
+    if (lfd < 0)
+    {
+        perror("套接字初始化失败!");
+        return 0;
+    }
     // 启动服务器程序
     epollRun(lfd);
     return 0;

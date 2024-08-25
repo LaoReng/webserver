@@ -4,7 +4,11 @@ PROJECT(httpServer)
 SET(CMAKE_CXX_STANDARD 11)  # 指定C++版本
 SET(EXE_NAME httpServer)
 
+FIND_PACKAGE(Threads REQUIRED)
+
 # 搜索源文件和指定头文件所在的文件夹
 AUX_SOURCE_DIRECTORY(src SRC)
 
 ADD_EXECUTABLE(${EXE_NAME} ${SRC})
+
+TARGET_LINK_LIBRARIES(${EXE_NAME} Threads::Threads)
