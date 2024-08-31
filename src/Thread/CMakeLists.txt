@@ -1,0 +1,9 @@
+SET(
+    SRC
+    ${SRC}
+    ${CMAKE_CURRENT_SOURCE_DIR}/ThreadPool.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/ThreadPool.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/WorkerThread.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/WorkerThread.h
+    PARENT_SCOPE
+)

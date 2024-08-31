@@ -1,0 +1,6 @@
+SET(
+    SRC
+    ${SRC}
+    ${CMAKE_CURRENT_SOURCE_DIR}/Log.h
+    PARENT_SCOPE
+)

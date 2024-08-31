@@ -1,0 +1,9 @@
+SET(
+    SRC
+    ${SRC}
+    ${CMAKE_CURRENT_SOURCE_DIR}/HttpRequest.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/HttpRequest.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/HttpResponse.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/HttpResponse.h
+    PARENT_SCOPE
+)

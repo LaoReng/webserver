@@ -1,0 +1,7 @@
+SET(
+    SRC
+    ${SRC}
+    ${CMAKE_CURRENT_SOURCE_DIR}/Buffer.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/Buffer.h
+    PARENT_SCOPE
+)

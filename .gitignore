@@ -1,5 +1,6 @@
 # 这个忽略文件前面不要加./
 build/
+bin/
 
 # Prerequisites
 *.d
