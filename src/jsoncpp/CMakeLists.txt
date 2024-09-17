@@ -1,0 +1,21 @@
+SET(
+    SRC
+    ${SRC}
+    ${CMAKE_CURRENT_SOURCE_DIR}/allocator.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/assertions.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
+    ${CMAKE_CURRENT_SOURCE_DIR}/config.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/forwards.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/json_features.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/json.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/json_reader.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/json_tool.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/json_value.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/json_valueiterator.inl
+    ${CMAKE_CURRENT_SOURCE_DIR}/json_writer.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/reader.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/value.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/version.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/writer.h
+    PARENT_SCOPE
+)

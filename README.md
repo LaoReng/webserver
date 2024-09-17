@@ -6,6 +6,8 @@ TcpServer组成部分有，用于监听的套接字、主EventLoop（这里面�
 
 <img src="./resource/webServer结构体图.png" alt="Alt text" style="zoom:80%;"/>
 
+手绘模型：<img src="./resource/Reactor模型示意图（手绘）.png" alt="Alt text" style="zoom:80%;"/>
+
 在主线程里面绑定本地IP和端口，得到一个用于通信的套接字，将这个通信套接字的读事件注册到Reactor反应堆模型中，Reactor底层用到的就是poll/epoll/select I/O多路复用技术，当套接字被触发时就证明有新连接到达了，这时候就会对新连接的客户端套接字进行封装，然后将他注册到Reactor模型中，如果是客户端的套接字有事件触发，这时就可以根据是读事件还是写事件就可以调用在注册时设置的回调函数来进行处理
 
 <img src="./resource/单反应堆模型.png" alt="Alt text" style="zoom:80%;"/>
@@ -14,6 +16,7 @@ TcpServer组成部分有，用于监听的套接字、主EventLoop（这里面�
 
 <img src="./resource/多反应堆模型.png" alt="Alt text" style="zoom:80%;"/>
 
+线程池模型
 <img src="./resource/ThreadPool模型.png" alt="Alt text" style="zoom:80%;"/>
 
 ## 多线程惊群问题
